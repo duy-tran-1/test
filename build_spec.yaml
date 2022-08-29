@@ -1,0 +1,12 @@
+version: 0.1
+component: build
+timeoutInSeconds: 6000
+shell: bash
+
+steps:
+  - type: Command
+    timeoutInSeconds: 600
+    name: "Useless command"
+    command: |
+      echo "Building docker image"
+      echo "IT WORKED"
