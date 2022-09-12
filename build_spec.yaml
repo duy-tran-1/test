@@ -49,6 +49,7 @@ steps:
     name: "Package"
     command: |
       echo "Packaging app"
+      chmod +x mvnw
       ./mvnw clean package
 
   - type: Command
