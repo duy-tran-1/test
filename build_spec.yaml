@@ -10,3 +10,4 @@ steps:
     command: |
       echo "Building docker image"
       echo "IT WORKED"
+      echo "Finishing build"
