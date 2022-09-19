@@ -18,7 +18,7 @@ public class HelloController {
     }
 
     @GetMapping(value = "/greeting", produces = {MediaType.APPLICATION_JSON_VALUE})
-    @CrossOrigin(origins = "http://localhost:8000")
+    @CrossOrigin(origins = {"http://localhost:8000","http://168.138.0.236"})
     @ResponseBody
     public ResponseEntity<Greeting> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         Greeting greeting = new Greeting(1,String.format("Hello, %s!", name));
