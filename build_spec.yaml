@@ -3,7 +3,7 @@ component: build
 timeoutInSeconds: 6000
 shell: bash
 
-# Comment 1
+# Test comment
 steps:
   - type: Command
     timeoutInSeconds: 600
